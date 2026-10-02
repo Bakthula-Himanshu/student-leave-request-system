@@ -482,12 +482,14 @@ void main() async {
     },
   );
 
-  final server = await shelf_io.serve(
-    handler,
-    InternetAddress.anyIPv4,
-    8080,
-  );
+  final port = int.parse(Platform.environment['PORT'] ?? '8080');
 
+final server = await shelf_io.serve(
+  handler,
+  InternetAddress.anyIPv4,
+  port,
+);
+  
   print(
     'Dart backend running at http://localhost:${server.port}',
   );
