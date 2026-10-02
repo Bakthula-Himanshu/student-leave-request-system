@@ -1,0 +1,13 @@
+
+name: student_leave_backend
+description: Dart backend for student leave request system
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  shelf: ^1.4.2
+  shelf_router: ^1.1.4
+  mysql1: ^0.20.0
+  sqlite3: ^3.7.0
