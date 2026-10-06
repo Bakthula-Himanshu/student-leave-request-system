@@ -8,8 +8,6 @@ RUN dart pub get
 
 COPY . .
 
-RUN dart compile exe bin/server.dart -o bin/server
+EXPOSE 10000
 
-EXPOSE 8080
-
-CMD ["./bin/server"]
+CMD ["dart", "run", "bin/server.dart"]
