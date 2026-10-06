@@ -7,7 +7,8 @@ void runStudentApp() {
   runApp(const LeaveApp());
 }
 
-const String baseUrl = 'http://localhost:8080/api/leaves';
+const String baseUrl =
+    'https://student-leave-request-system.onrender.com/api/leaves';
 
 class LeaveApp extends StatelessWidget {
   const LeaveApp({super.key});
